@@ -3,13 +3,11 @@
 <plist version="1.0">
     <dict>
         <key>#Build Date</key>
-        <string>11-4-2023</string>
+        <string>11-10-2024</string>
         <key>#Maker by</key>
         <string>Intel NUC9</string>
         <key>#OpenCore Version</key>
-        <string>v0.9.5 Release</string>
-        <key>#Posted on</key>
-        <string>黑果小兵的部落阁 https://blog.daliansky.net</string>
+        <string>v1.0.1 Release</string>
         <key>ACPI</key>
         <dict>
             <key>Add</key>
@@ -886,10 +884,10 @@
                 <false/>
                 <key>AppleXcpmForceBoost</key>
                 <false/>
-                <key>CustomPciSerialDevice</key>
-                <false/>
                 <key>CustomSMBIOSGuid</key>
                 <true/>
+                <key>CustomPciSerialDevice</key>
+                <false/>
                 <key>DisableIoMapper</key>
                 <true/>
                 <key>DisableIoMapperMapping</key>
@@ -1114,7 +1112,7 @@
                     <key>revcpu</key>
                     <integer>1</integer>
                     <key>revcpuname</key>
-                    <string>Intel Core i9-9980HK</string>
+                    <string>Intel Core i7-7950H</string>
                     <key>revpatch</key>
                     <string>sbvmm,pci,cpuname</string>
                 </dict>
@@ -1144,8 +1142,8 @@
                     <string>ipc_control_port_options=0 -no_compat_check -lilubetaall keepsyms=1 e1000=0 alcid=69 agdpmod=pikera</string>
                     <key>csr-active-config</key>
                     <data>fwoAAA==</data>
-                    <key>prev-lang:kbd</key>
-                    <string>zh-Hants:252</string>
+                    <key>#INFO (prev-lang:kbd)</key>
+                    <string>en:252 (ABC), set 656e3a323532</string>
                     <key>run-efi-updater</key>
                     <string>No</string>
                 </dict>
@@ -1168,39 +1166,275 @@
             </dict>
             <key>LegacyOverwrite</key>
             <false/>
-            <key>LegacySchema</key>
-            <dict/>
             <key>WriteFlash</key>
             <true/>
+            <key>LegacySchema</key>
+            <dict/>
         </dict>
         <key>PlatformInfo</key>
         <dict>
             <key>Automatic</key>
             <true/>
             <key>CustomMemory</key>
-            <false/>
+            <true/>
             <key>Generic</key>
             <dict>
                 <key>AdviseFeatures</key>
                 <false/>
-                <key>MLB</key>
-                <string>C020445014NLNV91M</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
+                <key>MLB</key>
+                <string>F5K9363004NFHDD1M</string>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>21nezhoQ</data>
+                <data>QrYt1j7n</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>iMac19,1</string>
+                <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C02DM08BJV3Q</string>
+                <string>F5KZCAY8P7QM</string>
                 <key>SystemUUID</key>
-                <string>1416A7D8-5F79-4CDC-9936-834257947567</string>
+                <string>3C1C85C6-28B6-430B-8D4F-5982D3D63EE7</string>
+            </dict>
+            <key>Memory</key>
+            <dict>
+                <key>DataWidth</key>
+                <integer>64</integer>
+                <key>Devices</key>
+                <array>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_A1</string>
+                        <key>Manufacturer</key>
+                        <string>859B</string>
+                        <key>PartNumber</key>
+                        <string>CT16G4SFRA32A.M16FR</string>
+                        <key>SerialNumber</key>
+                        <string>E7690F9B</string>
+                        <key>Size</key>
+                        <integer>16384</integer>
+                        <key>Speed</key>
+                        <integer>3200</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_A2</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_B1</string>
+                        <key>Manufacturer</key>
+                        <string>859B</string>
+                        <key>PartNumber</key>
+                        <string>CT16G4SFRA32A.M16FR</string>
+                        <key>SerialNumber</key>
+                        <string>E7690E1D</string>
+                        <key>Size</key>
+                        <integer>16384</integer>
+                        <key>Speed</key>
+                        <integer>3200</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_B2</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_C1</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_C2</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_D1</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_D2</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_E1</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_E2</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_F1</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                    <dict>
+                        <key>AssetTag</key>
+                        <string></string>
+                        <key>BankLocator</key>
+                        <string></string>
+                        <key>DeviceLocator</key>
+                        <string>DIMM_F2</string>
+                        <key>Manufacturer</key>
+                        <string>Acidanthera</string>
+                        <key>PartNumber</key>
+                        <string></string>
+                        <key>SerialNumber</key>
+                        <string></string>
+                        <key>Size</key>
+                        <integer>1</integer>
+                        <key>Speed</key>
+                        <integer>1</integer>
+                    </dict>
+                </array>
+                <key>ErrorCorrection</key>
+                <integer>3</integer>
+                <key>FormFactor</key>
+                <integer>13</integer>
+                <key>MaxCapacity</key>
+                <integer>68719476736</integer>
+                <key>TotalWidth</key>
+                <integer>64</integer>
+                <key>Type</key>
+                <integer>26</integer>
+                <key>TypeDetail</key>
+                <integer>128</integer>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1250,10 +1484,10 @@
                 <integer>0</integer>
                 <key>PointerPollMask</key>
                 <integer>-1</integer>
-                <key>PointerPollMax</key>
-                <integer>80</integer>
                 <key>PointerPollMin</key>
                 <integer>10</integer>
+                <key>PointerPollMax</key>
+                <integer>80</integer>
                 <key>PointerSpeedDiv</key>
                 <integer>1</integer>
                 <key>PointerSpeedMul</key>
@@ -1438,10 +1672,10 @@
                 <false/>
                 <key>TextRenderer</key>
                 <string>BuiltinGraphics</string>
-                <key>UIScale</key>
-                <integer>-1</integer>
                 <key>UgaPassThrough</key>
                 <false/>
+                <key>UIScale</key>
+                <integer>-1</integer>
             </dict>
             <key>ProtocolOverrides</key>
             <dict>
