@@ -1,7 +1,7 @@
 ![NUC9](./ScreenShots/NUC9.png)
 
 
-## OpenCore configuration (current OpenCore 1.0.1)
+## OpenCore configuration (current OpenCore 1.0.2)
 | Specifications | Details |
 | :-------: | :---------------------------------------------: |
 | Keyboard | english (ABC) |
